@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣勞基法特休計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>歷年制台灣勞基法特休計算機</h2>
+        <label for="startDate">就職日期：</label>
+        <input type="date" id="startDate">
+        
+        <label for="endDate">離職日期：</label>
+        <input type="date" id="endDate">
+        
+        <button onclick="calculateLeave()">計算特休</button>
+    </div>
+    
+    <div class="container">
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>年度</th>
+                    <th>可用特休 (天)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
